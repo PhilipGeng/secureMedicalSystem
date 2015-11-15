@@ -1,0 +1,7 @@
+COMP3334 term project
+
+Title: Secure medical system
+
+12132031d  GENG XU         12132031d@connect.polyu.hk
+13088783d  TAI SHUNWA	   13088783d@connect.polyu.hk
+12131354d  ZHANG BEIBEI    12131354d@connect.polyu.hk

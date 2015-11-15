@@ -1,0 +1,8 @@
+1. drag everything in the "code" folder into a http server
+2. visit https://server:port/code/login/doc_login.php
+3. login with account: D001/D002/D003/D004 password: 12345
+
+
+or just visit:
+https://foss.ddns.net:10443/login/doc_login.php
+it certainly work if the server is not closed
